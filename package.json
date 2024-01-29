@@ -1,7 +1,6 @@
 {
-  "name": "audeets-api-commons",
+  "name": "@benoitquette/audeets-api-commons",
   "version": "1.0.0",
-  "private": false,
   "author": "Benoit Quette",
   "dependencies": {
     "mongoose": "^8.0.2",
@@ -33,5 +32,10 @@
       "@babel/plugin-transform-class-properties",
       "@babel/plugin-transform-object-rest-spread"
     ]
+  },
+  "packageManager": "yarn@4.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benoitquette/audeets-api-commons.git"
   }
 }
