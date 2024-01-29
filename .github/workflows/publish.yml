@@ -23,4 +23,10 @@ jobs:
         with:
           node-version: 20
 
+      - name: create .npmrc file
+        run: |
+          echo "@benoitquette:registry=https://npm.pkg.github.com" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.PACKAGES_TOKEN }}" >> .npmrc
+          echo "always-auth=true" >> .npmrc
+      
       - run: npm publish
