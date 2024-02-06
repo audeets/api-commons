@@ -14,6 +14,7 @@ var UsersSchema = new mongoose.Schema(
     googleId: String,
     email: String,
     photo: String,
+    projectsMax: Number,
   },
   { timestamps: true }
 );

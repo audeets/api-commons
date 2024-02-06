@@ -2,7 +2,7 @@ const passport = require("passport");
 
 passport.serializeUser(function (user, cb) {
   process.nextTick(function () {
-    cb(null, { id: user.id });
+    cb(null, { id: user.id, projectsMax: user.projectsMax });
   });
 });
 
