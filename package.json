@@ -1,7 +1,8 @@
 {
   "name": "@benoitquette/audeets-api-commons",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "author": "Benoit Quette",
+  "type": "module",
   "dependencies": {
     "mongoose": "^8.1.1",
     "passport": "^0.7.0"
