@@ -22,7 +22,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/cli@npm:^7.23.4":
+"@babel/cli@npm:^7.23.9":
   version: 7.23.9
   resolution: "@babel/cli@npm:7.23.9"
   dependencies:
@@ -66,7 +66,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.23.7":
+"@babel/core@npm:^7.23.9":
   version: 7.23.9
   resolution: "@babel/core@npm:7.23.9"
   dependencies:
@@ -89,9 +89,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/eslint-parser@npm:^7.23.3":
-  version: 7.23.9
-  resolution: "@babel/eslint-parser@npm:7.23.9"
+"@babel/eslint-parser@npm:^7.23.10":
+  version: 7.23.10
+  resolution: "@babel/eslint-parser@npm:7.23.10"
   dependencies:
     "@nicolo-ribaudo/eslint-scope-5-internals": "npm:5.1.1-v1"
     eslint-visitor-keys: "npm:^2.1.0"
@@ -99,7 +99,7 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.11.0
     eslint: ^7.5.0 || ^8.0.0
-  checksum: 8a025e6c2d9ad47e86bfea9011422c8a053382692901607236cd0fba1ee52504d7d2b2c6186c14f15de7553ec0e2786b9a3c3d92542153f2d41c5241fb166745
+  checksum: dfc091d44c86c72658d53abe66c778f7aa436672d66ae99a0b72857c968defed4749c18d2d3a35b1f61c77a193761ae7a71997dbe43c4c7cffcf945bd106bd67
   languageName: node
   linkType: hard
 
@@ -1208,7 +1208,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.23.8":
+"@babel/preset-env@npm:^7.23.9":
   version: 7.23.9
   resolution: "@babel/preset-env@npm:7.23.9"
   dependencies:
@@ -1366,6 +1366,24 @@ __metadata:
   checksum: edc7bb180ce7e4d2aea10c6972fb10474341ac39ba8fdc4a27ffb328368dfdfbf40fca18e441bbe7c483774500d5c05e222cec276c242e952853dcaf4eb884f7
   languageName: node
   linkType: hard
+
+"@benoitquette/audeets-api-commons@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@benoitquette/audeets-api-commons@workspace:."
+  dependencies:
+    "@babel/cli": "npm:^7.23.9"
+    "@babel/core": "npm:^7.23.9"
+    "@babel/eslint-parser": "npm:^7.23.10"
+    "@babel/preset-env": "npm:^7.23.9"
+    eslint: "npm:^8.56.0"
+    eslint-config-prettier: "npm:^9.1.0"
+    eslint-plugin-flowtype: "npm:^8.0.3"
+    eslint-plugin-import: "npm:^2.29.1"
+    eslint-plugin-prettier: "npm:^5.1.3"
+    mongoose: "npm:^8.1.1"
+    passport: "npm:^0.7.0"
+  languageName: unknown
+  linkType: soft
 
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.4.0
@@ -1794,24 +1812,6 @@ __metadata:
   checksum: 96b6e40e439678ffb7fa266398510074d33c3980fbb475490b69980cca60adec3b0777047ef377068a29862157f83edef42efc64ce48ce38977d04d68de5b7fb
   languageName: node
   linkType: hard
-
-"audeets-api-commons@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "audeets-api-commons@workspace:."
-  dependencies:
-    "@babel/cli": "npm:^7.23.4"
-    "@babel/core": "npm:^7.23.7"
-    "@babel/eslint-parser": "npm:^7.23.3"
-    "@babel/preset-env": "npm:^7.23.8"
-    eslint: "npm:^8.56.0"
-    eslint-config-prettier: "npm:^9.1.0"
-    eslint-plugin-flowtype: "npm:^8.0.3"
-    eslint-plugin-import: "npm:^2.29.1"
-    eslint-plugin-prettier: "npm:^5.1.2"
-    mongoose: "npm:^8.0.2"
-    passport: "npm:^0.7.0"
-  languageName: unknown
-  linkType: soft
 
 "available-typed-arrays@npm:^1.0.5":
   version: 1.0.5
@@ -2384,7 +2384,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^5.1.2":
+"eslint-plugin-prettier@npm:^5.1.3":
   version: 5.1.3
   resolution: "eslint-plugin-prettier@npm:5.1.3"
   dependencies:
@@ -3579,7 +3579,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongoose@npm:^8.0.2":
+"mongoose@npm:^8.1.1":
   version: 8.1.1
   resolution: "mongoose@npm:8.1.1"
   dependencies:
