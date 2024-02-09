@@ -68,4 +68,4 @@ function onError(error) {
   }
 }
 
-export { createServer };
+export default { createServer };
