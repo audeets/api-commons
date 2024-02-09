@@ -1,14 +1,6 @@
-"use strict";
+import mongoose from "mongoose";
 
-/**
- * Module dependencies
- */
-
-var mongoose = require("mongoose");
-
-// end module dependencies
-
-var ResultSchema = new mongoose.Schema(
+const ResultSchema = new mongoose.Schema(
   {
     timestamp: Date,
     category: String,
@@ -31,4 +23,4 @@ var ResultSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Result", ResultSchema);
+export default ResultSchema;

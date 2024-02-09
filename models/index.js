@@ -1,7 +1,12 @@
+import mongoose from "mongoose";
+import userSchema from "./user.js";
+import projectSchema from "./project.js";
+import resultSchema from "./result.js";
+
 const mongoUrl = process.env.URL_MONGO;
-const mongoose = require("mongoose");
 mongoose.connect(mongoUrl);
-require("./Users");
-require("./Projects");
-require("./Results");
-module.exports = mongoose;
+mongoose.model("User", userSchema);
+mongoose.model("Project", projectSchema);
+mongoose.model("Result", resultSchema);
+
+export default mongoose;
