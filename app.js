@@ -38,6 +38,7 @@ const createApp = (allowMethods) => {
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: false }));
   app.use(cookieParser());
+  return app;
 };
 
 export default { createApp };
