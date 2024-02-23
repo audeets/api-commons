@@ -2,10 +2,11 @@ import mongoose from "mongoose";
 
 const ProjectSchema = new mongoose.Schema(
   {
-    url: String,
+    url: [String],
     title: String,
-    description: String,
+    domain: String,
     user: mongoose.Types.ObjectId,
+    deleted: { type: Boolean, default: false },
   },
   { timestamps: true }
 );

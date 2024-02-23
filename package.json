@@ -1,6 +1,6 @@
 {
   "name": "@benoitquette/audeets-api-commons",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "author": "Benoit Quette",
   "type": "module",
   "dependencies": {
@@ -20,18 +20,7 @@
   },
   "babel": {
     "presets": [
-      [
-        "@babel/env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ]
-    ],
-    "plugins": [
-      "@babel/plugin-transform-class-properties",
-      "@babel/plugin-transform-object-rest-spread"
+      "@babel/preset-env"
     ]
   },
   "packageManager": "yarn@4.0.2",
