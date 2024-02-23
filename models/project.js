@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const ProjectSchema = new mongoose.Schema(
   {
-    url: [String],
+    urls: [String],
     title: String,
     domain: String,
     user: mongoose.Types.ObjectId,
