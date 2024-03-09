@@ -28,7 +28,7 @@ const createApp = (allowMethods) => {
       cookie: {
         maxAge: 1000 * 60 * 30, // 30 mins
         httpOnly: false,
-        // sameSite: "none",
+        sameSite: "none",
       },
       store: MongoStore.create({
         mongoUrl: process.env.URL_MONGO,
