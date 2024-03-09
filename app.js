@@ -19,16 +19,19 @@ const createApp = (allowMethods) => {
     res.setHeader("Access-Control-Allow-Credentials", true);
     next();
   });
+  const domain = process.env.COOKIE_DOMAIN;
+  const domainConf = domain && domain !== "localhost" ? { domain } : {};
   app.use(
     session({
+      name: process.env.COOKIE_NAME,
       secret: process.env.SESSION_SECRET,
       resave: true,
       rolling: true,
       saveUninitialized: true,
       cookie: {
+        ...domainConf,
         maxAge: 1000 * 60 * 30, // 30 mins
         httpOnly: false,
-        sameSite: "lax",
       },
       store: MongoStore.create({
         mongoUrl: process.env.URL_MONGO,

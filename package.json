@@ -1,6 +1,6 @@
 {
   "name": "@benoitquette/audeets-api-commons",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "author": "Benoit Quette",
   "type": "module",
   "dependencies": {
