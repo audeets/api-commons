@@ -22,8 +22,8 @@ const createApp = (allowMethods) => {
   app.use(
     session({
       secret: process.env.SESSION_SECRET,
-      resave: true,
-      rolling: true,
+      resave: false,
+      // rolling: true,
       saveUninitialized: true,
       cookie: {
         maxAge: 1000 * 60 * 30,
