@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 var UserSchema = new mongoose.Schema(
   {
@@ -6,7 +6,7 @@ var UserSchema = new mongoose.Schema(
     googleId: String,
     email: String,
     photo: String,
-    projectsMax: Number,
+    projectsMax: Number
   },
   { timestamps: true }
 );

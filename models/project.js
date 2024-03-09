@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const ProjectSchema = new mongoose.Schema(
   {
@@ -6,7 +6,7 @@ const ProjectSchema = new mongoose.Schema(
     title: String,
     domain: String,
     user: mongoose.Types.ObjectId,
-    deleted: { type: Boolean, default: false },
+    deleted: { type: Boolean, default: false }
   },
   { timestamps: true }
 );

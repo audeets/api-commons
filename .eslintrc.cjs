@@ -1,16 +1,9 @@
-export default {
+module.exports = {
   root: true,
   env: {
     es2021: true,
   },
-  extends: ["prettier", "eslint:recommended"],
-  settings: {
-    "import/resolver": {
-      node: {
-        moduleDirectory: ["node_modules", "./"],
-      },
-    },
-  },
+  extends: ["prettier", "eslint:recommended", "plugin:import/recommended"],
   parser: "@babel/eslint-parser",
   parserOptions: {
     ecmaFeatures: {
@@ -23,7 +16,7 @@ export default {
   rules: {
     "no-undef": "off",
     "no-param-reassign": "off",
-    "import/order": "off",
+    "import/order": 1,
     "import/no-cycle": "off",
     "no-console": "off",
     "prefer-destructuring": "off",

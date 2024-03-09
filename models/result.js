@@ -1,11 +1,11 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const ResultSchema = new mongoose.Schema(
   {
     timestamp: Date,
     category: String,
     url: String,
-    project: { type: mongoose.Schema.Types.ObjectId, ref: "Project" },
+    project: { type: mongoose.Schema.Types.ObjectId, ref: 'Project' },
     rules: [
       {
         rule: String,
@@ -14,11 +14,11 @@ const ResultSchema = new mongoose.Schema(
         details: [
           {
             text: String,
-            link: String,
-          },
-        ],
-      },
-    ],
+            link: String
+          }
+        ]
+      }
+    ]
   },
   { timestamps: true }
 );

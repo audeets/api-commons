@@ -3,7 +3,7 @@ export const isUserAuthenticated = (req, res, next) => {
 };
 
 export const isAuthenticated = (req, res, next) => {
-  const apiKey = req.get("API-Key");
+  const apiKey = req.get('API-Key');
   if (apiKey && apiKey === process.env.API_KEY) {
     next();
   } else {
