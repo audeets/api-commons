@@ -22,11 +22,13 @@ const createApp = (allowMethods) => {
   app.use(
     session({
       secret: process.env.SESSION_SECRET,
-      resave: false,
+      resave: true,
+      rolling: true,
       saveUninitialized: true,
       cookie: {
         maxAge: 1000 * 60 * 30,
         httpOnly: false,
+        sameSite: "none",
       },
       store: MongoStore.create({
         mongoUrl: process.env.URL_MONGO,
