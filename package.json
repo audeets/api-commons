@@ -32,6 +32,6 @@
   "packageManager": "yarn@4.0.2",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/benoitquette/audeets-api-commons.git"
+    "url": "git+https://github.com/audeets/api-commons.git"
   }
 }
